@@ -15,6 +15,14 @@
 		B49358AF2988232B006F72F9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358AE2988232B006F72F9 /* AppConstants.swift */; };
 		B49358B129882464006F72F9 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358B029882464006F72F9 /* AppReducer.swift */; };
 		B49358B32988573C006F72F9 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358B22988573C006F72F9 /* StringExtention.swift */; };
+		B49358B9298864BD006F72F9 /* AppEnvExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358B729886465006F72F9 /* AppEnvExt.swift */; };
+		B49358BC298864FD006F72F9 /* ApiProviderExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358BA298864F4006F72F9 /* ApiProviderExt.swift */; };
+		B49358BF29886555006F72F9 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358BD29886553006F72F9 /* TestConstants.swift */; };
+		B49358C1298865D0006F72F9 /* MockedJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358C0298865D0006F72F9 /* MockedJson.swift */; };
+		B49358C5298866CB006F72F9 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358C4298866CB006F72F9 /* DataExt.swift */; };
+		B49358D0298875CB006F72F9 /* JSONDecoderExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358CF298875CB006F72F9 /* JSONDecoderExt.swift */; };
+		B49358D229887CF8006F72F9 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = B49358D129887CF8006F72F9 /* albums.json */; };
+		B49358D9298888EF006F72F9 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49358D7298888EC006F72F9 /* Cancellable.swift */; };
 		B4EC4D59298800A800B700BA /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D58298800A800B700BA /* Album.swift */; };
 		B4EC4D5B2988021D00B700BA /* AlbumEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D5A2988021D00B700BA /* AlbumEndPoint.swift */; };
 		B4EC4D5D2988066800B700BA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D5C2988066800B700BA /* AppError.swift */; };
@@ -51,6 +59,14 @@
 		B49358AE2988232B006F72F9 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B49358B029882464006F72F9 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		B49358B22988573C006F72F9 /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		B49358B729886465006F72F9 /* AppEnvExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvExt.swift; sourceTree = "<group>"; };
+		B49358BA298864F4006F72F9 /* ApiProviderExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviderExt.swift; sourceTree = "<group>"; };
+		B49358BD29886553006F72F9 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		B49358C0298865D0006F72F9 /* MockedJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedJson.swift; sourceTree = "<group>"; };
+		B49358C4298866CB006F72F9 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
+		B49358CF298875CB006F72F9 /* JSONDecoderExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExt.swift; sourceTree = "<group>"; };
+		B49358D129887CF8006F72F9 /* albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
+		B49358D7298888EC006F72F9 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		B4EC4D58298800A800B700BA /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		B4EC4D5A2988021D00B700BA /* AlbumEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEndPoint.swift; sourceTree = "<group>"; };
 		B4EC4D5C2988066800B700BA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -115,6 +131,7 @@
 				B4EC4D5C2988066800B700BA /* AppError.swift */,
 				B49358B22988573C006F72F9 /* StringExtention.swift */,
 				B49358AE2988232B006F72F9 /* AppConstants.swift */,
+				B49358D7298888EC006F72F9 /* Cancellable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -125,6 +142,26 @@
 				B4EC4D60298807E400B700BA /* MuzikApp.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		B49358CC298870B6006F72F9 /* MockedJson */ = {
+			isa = PBXGroup;
+			children = (
+				B49358C0298865D0006F72F9 /* MockedJson.swift */,
+				B49358D129887CF8006F72F9 /* albums.json */,
+			);
+			path = MockedJson;
+			sourceTree = "<group>";
+		};
+		B49358D62988878B006F72F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B49358CF298875CB006F72F9 /* JSONDecoderExt.swift */,
+				B49358C4298866CB006F72F9 /* DataExt.swift */,
+				B49358BA298864F4006F72F9 /* ApiProviderExt.swift */,
+				B49358B729886465006F72F9 /* AppEnvExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B4EC4D572987FEC400B700BA /* Networking */ = {
@@ -176,6 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				B4FD37D52987C93000245E0C /* AlbumViewTests.swift */,
+				B49358D62988878B006F72F9 /* Extensions */,
+				B49358CC298870B6006F72F9 /* MockedJson */,
+				B49358BD29886553006F72F9 /* TestConstants.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -326,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49358D229887CF8006F72F9 /* albums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +387,7 @@
 				B4FD37C72987C92F00245E0C /* AppView.swift in Sources */,
 				B4FD37FF2987F2B200245E0C /* ImageView.swift in Sources */,
 				B49358AD298820BD006F72F9 /* AppStore.swift in Sources */,
+				B49358D9298888EF006F72F9 /* Cancellable.swift in Sources */,
 				B4FD38042987F6BB00245E0C /* Constants.swift in Sources */,
 				B49358AB2988205B006F72F9 /* AppEnv.swift in Sources */,
 				B4EC4D5F2988072E00B700BA /* AlbumError.swift in Sources */,
@@ -363,6 +405,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4FD37D62987C93000245E0C /* AlbumViewTests.swift in Sources */,
+				B49358C1298865D0006F72F9 /* MockedJson.swift in Sources */,
+				B49358BC298864FD006F72F9 /* ApiProviderExt.swift in Sources */,
+				B49358D0298875CB006F72F9 /* JSONDecoderExt.swift in Sources */,
+				B49358B9298864BD006F72F9 /* AppEnvExt.swift in Sources */,
+				B49358C5298866CB006F72F9 /* DataExt.swift in Sources */,
+				B49358BF29886555006F72F9 /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

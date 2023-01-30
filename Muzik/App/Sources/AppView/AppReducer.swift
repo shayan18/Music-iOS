@@ -20,7 +20,7 @@ let appReducer = AnyReducer.combine(
     case .didAppear:
         state.albumListState = .init()
         
-    case .albumList(action: let action):
+    case .albumList:
         break
     }
     return .none

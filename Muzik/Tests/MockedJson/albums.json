@@ -1,0 +1,14 @@
+[
+  {
+    "album" : "test",
+    "artist" : "test",
+    "cover" : "",
+    "id" : "1",
+    "label" : "test",
+    "tracks" : [
+      "Coin",
+      "Insert"
+    ],
+    "year" : "2019"
+    }
+]
