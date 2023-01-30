@@ -10,19 +10,13 @@
 		B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C42987C92F00245E0C /* MuzikApp.swift */; };
 		B4FD37C72987C92F00245E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C62987C92F00245E0C /* ContentView.swift */; };
 		B4FD37C92987C93000245E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FD37C82987C93000245E0C /* Assets.xcassets */; };
-		B4FD37CC2987C93000245E0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FD37CB2987C93000245E0C /* Preview Assets.xcassets */; };
 		B4FD37D62987C93000245E0C /* MuzikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37D52987C93000245E0C /* MuzikTests.swift */; };
+		B4FD37F02987CBB300245E0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B4FD37EF2987CBB300245E0C /* ComposableArchitecture */; };
+		B4FD37F32987CC0200245E0C /* Microya in Frameworks */ = {isa = PBXBuildFile; productRef = B4FD37F22987CC0200245E0C /* Microya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B4FD37D22987C93000245E0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4FD37B92987C92F00245E0C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4FD37C02987C92F00245E0C;
-			remoteInfo = Muzik;
-		};
-		B4FD37DC2987C93000245E0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4FD37B92987C92F00245E0C /* Project object */;
 			proxyType = 1;
@@ -36,10 +30,8 @@
 		B4FD37C42987C92F00245E0C /* MuzikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikApp.swift; sourceTree = "<group>"; };
 		B4FD37C62987C92F00245E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4FD37C82987C93000245E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B4FD37CB2987C93000245E0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4FD37D12987C93000245E0C /* MuzikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FD37D52987C93000245E0C /* MuzikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikTests.swift; sourceTree = "<group>"; };
-		B4FD37DB2987C93000245E0C /* MuzikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +39,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FD37F02987CBB300245E0C /* ComposableArchitecture in Frameworks */,
+				B4FD37F32987CC0200245E0C /* Microya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B4FD37CE2987C93000245E0C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4FD37D82987C93000245E0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -70,8 +57,8 @@
 		B4FD37B82987C92F00245E0C = {
 			isa = PBXGroup;
 			children = (
-				B4FD37C32987C92F00245E0C /* Muzik */,
-				B4FD37D42987C93000245E0C /* MuzikTests */,
+				B4FD37C32987C92F00245E0C /* App */,
+				B4FD37D42987C93000245E0C /* Tests */,
 				B4FD37C22987C92F00245E0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,36 +68,42 @@
 			children = (
 				B4FD37C12987C92F00245E0C /* Muzik.app */,
 				B4FD37D12987C93000245E0C /* MuzikTests.xctest */,
-				B4FD37DB2987C93000245E0C /* MuzikUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4FD37C32987C92F00245E0C /* Muzik */ = {
+		B4FD37C32987C92F00245E0C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B4FD37C42987C92F00245E0C /* MuzikApp.swift */,
-				B4FD37C62987C92F00245E0C /* ContentView.swift */,
-				B4FD37C82987C93000245E0C /* Assets.xcassets */,
-				B4FD37CA2987C93000245E0C /* Preview Content */,
+				B4FD37F42987CC4900245E0C /* Sources */,
+				B4FD37F62987CEEA00245E0C /* Resources */,
 			);
-			path = Muzik;
+			path = App;
 			sourceTree = "<group>";
 		};
-		B4FD37CA2987C93000245E0C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B4FD37CB2987C93000245E0C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B4FD37D42987C93000245E0C /* MuzikTests */ = {
+		B4FD37D42987C93000245E0C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				B4FD37D52987C93000245E0C /* MuzikTests.swift */,
 			);
-			path = MuzikTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B4FD37F42987CC4900245E0C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B4FD37C62987C92F00245E0C /* ContentView.swift */,
+				B4FD37C42987C92F00245E0C /* MuzikApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B4FD37F62987CEEA00245E0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4FD37C82987C93000245E0C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +122,10 @@
 			dependencies = (
 			);
 			name = Muzik;
+			packageProductDependencies = (
+				B4FD37EF2987CBB300245E0C /* ComposableArchitecture */,
+				B4FD37F22987CC0200245E0C /* Microya */,
+			);
 			productName = Muzik;
 			productReference = B4FD37C12987C92F00245E0C /* Muzik.app */;
 			productType = "com.apple.product-type.application";
@@ -151,24 +148,6 @@
 			productReference = B4FD37D12987C93000245E0C /* MuzikTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B4FD37DA2987C93000245E0C /* MuzikUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B4FD37EB2987C93000245E0C /* Build configuration list for PBXNativeTarget "MuzikUITests" */;
-			buildPhases = (
-				B4FD37D72987C93000245E0C /* Sources */,
-				B4FD37D82987C93000245E0C /* Frameworks */,
-				B4FD37D92987C93000245E0C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B4FD37DD2987C93000245E0C /* PBXTargetDependency */,
-			);
-			name = MuzikUITests;
-			productName = MuzikUITests;
-			productReference = B4FD37DB2987C93000245E0C /* MuzikUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,10 +165,6 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = B4FD37C02987C92F00245E0C;
 					};
-					B4FD37DA2987C93000245E0C = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = B4FD37C02987C92F00245E0C;
-					};
 				};
 			};
 			buildConfigurationList = B4FD37BC2987C92F00245E0C /* Build configuration list for PBXProject "Muzik" */;
@@ -201,13 +176,16 @@
 				Base,
 			);
 			mainGroup = B4FD37B82987C92F00245E0C;
+			packageReferences = (
+				B4FD37EE2987CBB300245E0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				B4FD37F12987CC0200245E0C /* XCRemoteSwiftPackageReference "Microya" */,
+			);
 			productRefGroup = B4FD37C22987C92F00245E0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B4FD37C02987C92F00245E0C /* Muzik */,
 				B4FD37D02987C93000245E0C /* MuzikTests */,
-				B4FD37DA2987C93000245E0C /* MuzikUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,19 +195,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FD37CC2987C93000245E0C /* Preview Assets.xcassets in Resources */,
 				B4FD37C92987C93000245E0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B4FD37CF2987C93000245E0C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4FD37D92987C93000245E0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,13 +226,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4FD37D72987C93000245E0C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -270,11 +233,6 @@
 			isa = PBXTargetDependency;
 			target = B4FD37C02987C92F00245E0C /* Muzik */;
 			targetProxy = B4FD37D22987C93000245E0C /* PBXContainerItemProxy */;
-		};
-		B4FD37DD2987C93000245E0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B4FD37C02987C92F00245E0C /* Muzik */;
-			targetProxy = B4FD37DC2987C93000245E0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,7 +358,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Muzik/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TH46F6KBN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,7 +386,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Muzik/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TH46F6KBN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -491,42 +447,6 @@
 			};
 			name = Release;
 		};
-		B4FD37EC2987C93000245E0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9TH46F6KBN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robot.MuzikUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Muzik;
-			};
-			name = Debug;
-		};
-		B4FD37ED2987C93000245E0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9TH46F6KBN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robot.MuzikUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Muzik;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,16 +477,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4FD37EB2987C93000245E0C /* Build configuration list for PBXNativeTarget "MuzikUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B4FD37EC2987C93000245E0C /* Debug */,
-				B4FD37ED2987C93000245E0C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4FD37EE2987CBB300245E0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		B4FD37F12987CC0200245E0C /* XCRemoteSwiftPackageReference "Microya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FlineDev/Microya/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4FD37EF2987CBB300245E0C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4FD37EE2987CBB300245E0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		B4FD37F22987CC0200245E0C /* Microya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4FD37F12987CC0200245E0C /* XCRemoteSwiftPackageReference "Microya" */;
+			productName = Microya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4FD37B92987C92F00245E0C /* Project object */;
 }
