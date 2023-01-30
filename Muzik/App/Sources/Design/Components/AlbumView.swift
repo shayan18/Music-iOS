@@ -12,14 +12,17 @@ struct AlbumView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            
-            HStack(alignment: .center, spacing: 5) {
+            HStack(spacing: 5) {
                 ImageView(state: ImageViewState(url: state.url))
-                VStack(alignment: .leading) {
-                    Text(state.trackTitle)
+                VStack(alignment: .leading, spacing: 5) {
                     Text(state.name)
+                        .font(.title3)
+                        .bold()
                     Text(state.artistName)
+                    Text(state.trackTitle)
+                        .lineLimit(1)
                 }
+                Spacer()
             }
         }
     }

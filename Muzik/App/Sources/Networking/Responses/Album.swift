@@ -8,7 +8,7 @@
 import Foundation
 
 /// The attributes of a Album object including track list.
-struct AlbumResponse: Decodable {
+struct Album: Decodable, Identifiable, Equatable {
     /// The unique identifier for the given object. Required.
     let id: String
     
@@ -28,4 +28,13 @@ struct AlbumResponse: Decodable {
     
     /// The year the album launched.
     let year: String
+    
+    /// Computed Album property for more readibility
+    var name: String {
+        "Album: \(album)"
+    }
+    
+    var imageUrl: URL? {
+        URL(string: cover)
+    }
 }

@@ -18,7 +18,7 @@ struct ImageView: View {
                     .resizable()
                     .cornerRadius(Constants.roundedImageCornerRadius)
                 
-            case .failure(_):
+            case .failure:
                 Image(systemName: Constants.imagePlaceHolder)
                     .resizable()
                     .cornerRadius(Constants.roundedImageCornerRadius)
