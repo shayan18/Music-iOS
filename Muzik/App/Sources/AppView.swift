@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AppView.swift
 //  Muzik
 //
 //  Created by Shayan Ali on 30.01.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AppView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppView()
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C42987C92F00245E0C /* MuzikApp.swift */; };
-		B4FD37C72987C92F00245E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C62987C92F00245E0C /* ContentView.swift */; };
+		B4FD37C72987C92F00245E0C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C62987C92F00245E0C /* AppView.swift */; };
 		B4FD37C92987C93000245E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FD37C82987C93000245E0C /* Assets.xcassets */; };
 		B4FD37D62987C93000245E0C /* MuzikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37D52987C93000245E0C /* MuzikTests.swift */; };
 		B4FD37F02987CBB300245E0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B4FD37EF2987CBB300245E0C /* ComposableArchitecture */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		B4FD37C12987C92F00245E0C /* Muzik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FD37C42987C92F00245E0C /* MuzikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikApp.swift; sourceTree = "<group>"; };
-		B4FD37C62987C92F00245E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4FD37C62987C92F00245E0C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B4FD37C82987C93000245E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4FD37D12987C93000245E0C /* MuzikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FD37D52987C93000245E0C /* MuzikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikTests.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		B4FD37F42987CC4900245E0C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B4FD37C62987C92F00245E0C /* ContentView.swift */,
+				B4FD37C62987C92F00245E0C /* AppView.swift */,
 				B4FD37C42987C92F00245E0C /* MuzikApp.swift */,
 			);
 			path = Sources;
@@ -213,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FD37C72987C92F00245E0C /* ContentView.swift in Sources */,
+				B4FD37C72987C92F00245E0C /* AppView.swift in Sources */,
 				B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
