@@ -18,7 +18,6 @@ let albumListReducer = AnyReducer<AlbumListState, AlbumListAction, AppEnv>() { s
             .catchToEffect()
             .cancellable(id: Cancellable(), cancelInFlight: true)
             .map { AlbumListAction.receivedAlbumResponse($0) }
-            
         
     case .filteredAlbumsUpdateRequestedViaSearchText:
         if state.searchText.isEmpty {

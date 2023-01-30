@@ -1,5 +1,5 @@
 //
-//  AlbumImageStore.swift
+//  ImageViewStore.swift
 //  Muzik
 //
 //  Created by Shayan Ali on 30.01.23.

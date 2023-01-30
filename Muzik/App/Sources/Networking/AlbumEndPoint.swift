@@ -10,7 +10,7 @@ import Microya
 
 /// The collection of supported endpoints of the Album domain
 enum AlbumEndPoint {
-    /// Request to get world news.
+    /// Request to get Albums
     case getAlbums
 }
 

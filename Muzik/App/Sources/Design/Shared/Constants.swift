@@ -8,7 +8,6 @@
 import Foundation
 
 enum Constants {
-    
     // Default corner radius for album image.
     static let roundedImageCornerRadius: CGFloat = 10.0
     
