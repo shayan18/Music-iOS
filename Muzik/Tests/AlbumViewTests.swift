@@ -8,5 +8,6 @@
 import XCTest
 @testable import Muzik
 
-final class MuzikTests: XCTestCase {
+final class AlbumViewTests: XCTestCase {
+    
 }

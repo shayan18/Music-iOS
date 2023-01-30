@@ -10,9 +10,14 @@
 		B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C42987C92F00245E0C /* MuzikApp.swift */; };
 		B4FD37C72987C92F00245E0C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C62987C92F00245E0C /* AppView.swift */; };
 		B4FD37C92987C93000245E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FD37C82987C93000245E0C /* Assets.xcassets */; };
-		B4FD37D62987C93000245E0C /* MuzikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37D52987C93000245E0C /* MuzikTests.swift */; };
+		B4FD37D62987C93000245E0C /* AlbumViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37D52987C93000245E0C /* AlbumViewTests.swift */; };
 		B4FD37F02987CBB300245E0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B4FD37EF2987CBB300245E0C /* ComposableArchitecture */; };
 		B4FD37F32987CC0200245E0C /* Microya in Frameworks */ = {isa = PBXBuildFile; productRef = B4FD37F22987CC0200245E0C /* Microya */; };
+		B4FD37FB2987EC4500245E0C /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37FA2987EC4500245E0C /* AlbumView.swift */; };
+		B4FD37FD2987EC9700245E0C /* AlbumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37FC2987EC9700245E0C /* AlbumStore.swift */; };
+		B4FD37FF2987F2B200245E0C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37FE2987F2B200245E0C /* ImageView.swift */; };
+		B4FD38012987F2E300245E0C /* ImageViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD38002987F2E300245E0C /* ImageViewStore.swift */; };
+		B4FD38042987F6BB00245E0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD38032987F6BB00245E0C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,12 @@
 		B4FD37C62987C92F00245E0C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B4FD37C82987C93000245E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4FD37D12987C93000245E0C /* MuzikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4FD37D52987C93000245E0C /* MuzikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikTests.swift; sourceTree = "<group>"; };
+		B4FD37D52987C93000245E0C /* AlbumViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewTests.swift; sourceTree = "<group>"; };
+		B4FD37FA2987EC4500245E0C /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		B4FD37FC2987EC9700245E0C /* AlbumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumStore.swift; sourceTree = "<group>"; };
+		B4FD37FE2987F2B200245E0C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B4FD38002987F2E300245E0C /* ImageViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewStore.swift; sourceTree = "<group>"; };
+		B4FD38032987F6BB00245E0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +94,7 @@
 		B4FD37D42987C93000245E0C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B4FD37D52987C93000245E0C /* MuzikTests.swift */,
+				B4FD37D52987C93000245E0C /* AlbumViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 		B4FD37F42987CC4900245E0C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B4FD37F92987EBF800245E0C /* Design */,
 				B4FD37C62987C92F00245E0C /* AppView.swift */,
 				B4FD37C42987C92F00245E0C /* MuzikApp.swift */,
 			);
@@ -104,6 +115,34 @@
 				B4FD37C82987C93000245E0C /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4FD37F92987EBF800245E0C /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B4FD38022987F4B500245E0C /* Components */,
+				B4FD38052987F7BF00245E0C /* Shared */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		B4FD38022987F4B500245E0C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B4FD38002987F2E300245E0C /* ImageViewStore.swift */,
+				B4FD37FE2987F2B200245E0C /* ImageView.swift */,
+				B4FD37FC2987EC9700245E0C /* AlbumStore.swift */,
+				B4FD37FA2987EC4500245E0C /* AlbumView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B4FD38052987F7BF00245E0C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B4FD38032987F6BB00245E0C /* Constants.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FD37FB2987EC4500245E0C /* AlbumView.swift in Sources */,
+				B4FD38012987F2E300245E0C /* ImageViewStore.swift in Sources */,
 				B4FD37C72987C92F00245E0C /* AppView.swift in Sources */,
+				B4FD37FF2987F2B200245E0C /* ImageView.swift in Sources */,
+				B4FD38042987F6BB00245E0C /* Constants.swift in Sources */,
 				B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */,
+				B4FD37FD2987EC9700245E0C /* AlbumStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FD37D62987C93000245E0C /* MuzikTests.swift in Sources */,
+				B4FD37D62987C93000245E0C /* AlbumViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
