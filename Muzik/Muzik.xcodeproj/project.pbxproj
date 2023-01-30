@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C42987C92F00245E0C /* MuzikApp.swift */; };
+		B4EC4D59298800A800B700BA /* AlbumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D58298800A800B700BA /* AlbumResponse.swift */; };
+		B4EC4D5B2988021D00B700BA /* AlbumEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D5A2988021D00B700BA /* AlbumEndPoint.swift */; };
+		B4EC4D5D2988066800B700BA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D5C2988066800B700BA /* AppError.swift */; };
+		B4EC4D5F2988072E00B700BA /* AlbumError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D5E2988072E00B700BA /* AlbumError.swift */; };
+		B4EC4D61298807E400B700BA /* MuzikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC4D60298807E400B700BA /* MuzikApp.swift */; };
 		B4FD37C72987C92F00245E0C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37C62987C92F00245E0C /* AppView.swift */; };
 		B4FD37C92987C93000245E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FD37C82987C93000245E0C /* Assets.xcassets */; };
 		B4FD37D62987C93000245E0C /* AlbumViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD37D52987C93000245E0C /* AlbumViewTests.swift */; };
@@ -31,8 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4EC4D58298800A800B700BA /* AlbumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResponse.swift; sourceTree = "<group>"; };
+		B4EC4D5A2988021D00B700BA /* AlbumEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEndPoint.swift; sourceTree = "<group>"; };
+		B4EC4D5C2988066800B700BA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B4EC4D5E2988072E00B700BA /* AlbumError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumError.swift; sourceTree = "<group>"; };
+		B4EC4D60298807E400B700BA /* MuzikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikApp.swift; sourceTree = "<group>"; };
 		B4FD37C12987C92F00245E0C /* Muzik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzik.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4FD37C42987C92F00245E0C /* MuzikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzikApp.swift; sourceTree = "<group>"; };
 		B4FD37C62987C92F00245E0C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B4FD37C82987C93000245E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4FD37D12987C93000245E0C /* MuzikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +72,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4EC4D572987FEC400B700BA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B4EC4D622988081A00B700BA /* Responses */,
+				B4EC4D5A2988021D00B700BA /* AlbumEndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B4EC4D622988081A00B700BA /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B4EC4D5E2988072E00B700BA /* AlbumError.swift */,
+				B4EC4D58298800A800B700BA /* AlbumResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		B4FD37B82987C92F00245E0C = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +128,11 @@
 		B4FD37F42987CC4900245E0C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B4EC4D572987FEC400B700BA /* Networking */,
 				B4FD37F92987EBF800245E0C /* Design */,
+				B4EC4D60298807E400B700BA /* MuzikApp.swift */,
+				B4EC4D5C2988066800B700BA /* AppError.swift */,
 				B4FD37C62987C92F00245E0C /* AppView.swift */,
-				B4FD37C42987C92F00245E0C /* MuzikApp.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -254,11 +282,15 @@
 			files = (
 				B4FD37FB2987EC4500245E0C /* AlbumView.swift in Sources */,
 				B4FD38012987F2E300245E0C /* ImageViewStore.swift in Sources */,
+				B4EC4D5D2988066800B700BA /* AppError.swift in Sources */,
+				B4EC4D61298807E400B700BA /* MuzikApp.swift in Sources */,
 				B4FD37C72987C92F00245E0C /* AppView.swift in Sources */,
 				B4FD37FF2987F2B200245E0C /* ImageView.swift in Sources */,
 				B4FD38042987F6BB00245E0C /* Constants.swift in Sources */,
-				B4FD37C52987C92F00245E0C /* MuzikApp.swift in Sources */,
+				B4EC4D5F2988072E00B700BA /* AlbumError.swift in Sources */,
+				B4EC4D59298800A800B700BA /* AlbumResponse.swift in Sources */,
 				B4FD37FD2987EC9700245E0C /* AlbumStore.swift in Sources */,
+				B4EC4D5B2988021D00B700BA /* AlbumEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

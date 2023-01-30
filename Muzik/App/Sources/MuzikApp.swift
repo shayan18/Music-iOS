@@ -1,5 +1,5 @@
 //
-//  MuzikApp.swift
+//  MusicApp.swift
 //  Muzik
 //
 //  Created by Shayan Ali on 30.01.23.
